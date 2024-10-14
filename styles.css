@@ -1,0 +1,167 @@
+/* GLOBAL STYLES */
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-size: cover;
+    /* Ensures background covers the screen */
+    background-position: center;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+    /* Removes extra margin on smaller screens */
+    box-sizing: border-box;
+    /* Helps with consistent padding management */
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 2.5rem;
+    /* Scales relative to screen size */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+.established {
+    font-style: italic;
+}
+
+/* MENU CONTAINER */
+.menu {
+    width: 90%;
+    /* Adjust width for smaller screens */
+    max-width: 500px;
+    background-color: burlywood;
+    margin: 20px auto;
+    /* Centering with auto margin */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounding corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow effect */
+}
+
+/* IMAGE */
+img {
+    display: block;
+    max-width: 100%;
+    /* Ensures images scale */
+    height: auto;
+    margin: 10px auto;
+}
+
+/* HORIZONTAL LINE */
+hr {
+    height: 2px;
+    background-color: brown;
+    border: none;
+    /* Removes border */
+}
+
+/* MENU ITEMS */
+.item {
+    display: flex;
+    /* Aligns price and flavor side by side */
+    justify-content: space-between;
+    /* Pushes content to edges */
+    margin: 10px 0;
+}
+
+.item p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.flavor,
+.dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.875rem;
+    /* Smaller footer text */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover,
+a:active {
+    color: brown;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        width: 95%;
+        /* Expands more on smaller screens */
+        padding: 15px;
+    }
+
+    .item {
+        flex-direction: column;
+        /* Stacks items vertically */
+        text-align: center;
+    }
+
+    .flavor,
+    .dessert,
+    .price {
+        width: 100%;
+        /* Full width on small screens */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+}
